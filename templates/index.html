@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        .content {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+
+        .form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 style="text-align: center">Weather App</h1>
+    
+        <div class="form">
+            <form action="/weatherapp" method="POST">
+                <label for="city">Enter City:</label>
+                <input type="text" name="city" id="city" required>
+
+                <label for="units">Enter Units:</label>
+                <input type="text" name="units" id="units" required>
+
+                <label for="appid">Enter your API KEY:</label>
+                <input type="text" name="appid" id="appid" value="82ce41685f8fbf4f132b18afaca6271a" readonly required>
+
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
