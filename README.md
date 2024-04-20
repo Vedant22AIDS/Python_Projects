@@ -1,5 +1,4 @@
 
-Creating a README for your GitHub repository is a great way to inform visitors and potential contributors about your project. Here's a basic template you can use for a Weather App made with Python, HTML, and Flask:
 
 Weather App
 
